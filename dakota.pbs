@@ -7,15 +7,14 @@
 ##      Dakota jobs on CARC machines.
 ##	
 # M=6 processors
-#PBS -l nodes=3:ppn=2
+#PBS -l nodes=1:ppn=6
 #PBS -l walltime=00:05:00
 #PBS -N DAKOTA_parallel_case
 #PBS -j oe
 
 cd $PBS_O_WORKDIR
 
-#module load dakota/6.4/openmpi/1.10.1/intel/16.0.0
-module load /users/jdcf2710/modulefiles/Dakota/xena_intel_6_4
+module load dakota/6.4/openmpi/1.10.1/intel/16.0.0
 
 # Get number of processors and nodes
 NPROCS=$(cat $PBS_NODEFILE | wc -l)

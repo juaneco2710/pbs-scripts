@@ -25,7 +25,7 @@ NPROCS=$(cat $PBS_NODEFILE | wc -l)
 #Load OpenFOAM module
 
 #module load openfoam/2.3.0
-#module load openfoam/3.0/openmpi/1.10.2/intel/16.0.0
+module load openfoam/3.0/openmpi/1.10.2/intel/16.0.0
 
 # Source OpenFOAM run functions
 . $WM_PROJECT_DIR/bin/tools/RunFunctions
